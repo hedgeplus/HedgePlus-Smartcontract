@@ -1,0 +1,10 @@
+.idea
+node_modules
+*.log
+cache
+artifacts
+.env
+typechain
+coverage
+coverage.json
+.DS_Store
