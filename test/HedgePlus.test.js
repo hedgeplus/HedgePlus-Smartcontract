@@ -4,6 +4,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { expect } = require('chai');
 const { ether } = require('@openzeppelin/test-helpers');
+
 describe("HedgePlus contract", function () {
 
   let hpContract;
@@ -19,10 +20,10 @@ describe("HedgePlus contract", function () {
 
   beforeEach(async function () {
     // eslint-disable-next-line no-undef
-    const Contract = await ethers.getContractFactory(CONTRACT_NAME);
+    const contract = await ethers.getContractFactory(CONTRACT_NAME);
     // eslint-disable-next-line no-undef
     [owner, addr1, addr2, ...addrs] = await ethers.getSigners();
-    hpContract = await Contract.deploy(marketMakingAddress);
+    hpContract = await contract.deploy(marketMakingAddress);
   });
 
   describe("Deployment", function () {
