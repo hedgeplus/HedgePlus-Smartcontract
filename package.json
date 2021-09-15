@@ -36,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/contracts": "^4.3.2",
     "@openzeppelin/hardhat-upgrades": "^1.8.2",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
